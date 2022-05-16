@@ -12,11 +12,12 @@
   overflow: hidden;
 }
 
-.informations-list, .join, .product-development, .filtr-menu, .companies-logo, .worker, .social-media, .product-device, .benefits__list, .menu-top__list, .nav-list {
+.informations-list, .join, .product-development, .filtr-menu, .companies-logo, .worker, .social-media, .product-device, .benefits__list, .menu-contact__item,
+.menu-social__item, .menu-top__list, .nav-list {
   list-style: none;
 }
 
-.informations-list__mail, .informations-list__number, .informations-list__address, .focus, .object, .social-media__link, .menu-top__link, .nav-list__link, .logo__link {
+.informations-list__mail, .informations-list__number, .informations-list__address, .focus, .object, .social-media__link, .menu-contact__mail, .menu-contact__tel, .menu-top__link, .nav-list__link, .logo__link {
   text-decoration: none;
 }
 
@@ -208,16 +209,21 @@ img {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.container--display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: auto;
+  height: 100%;
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .section {
@@ -371,30 +377,47 @@ img {
   position: fixed;
   top: 0;
   background-color: rgb(255, 255, 255);
-  width: 100vh;
+  width: 100%;
   height: 100vh;
+  padding-left: 40px;
+  padding-bottom: 48px;
 }
 
 .menu-closed {
+  margin-top: 10px;
   background-color: transparent;
   border: 0;
   display: block;
+  margin-left: auto;
+}
+
+.menu-top__link {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: rgb(33, 33, 33);
 }
 
 .menu-top__list:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.menu-top__list:not(:list-child) {
+.menu-contact__tel {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: rgba(117, 117, 117, 0.5);
   margin-bottom: 32px;
 }
 
-.menu-top__link {
-  font-size: 40px;
+.menu-contact__mail {
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.17;
+  line-height: 1.16;
   letter-spacing: 0.02em;
-  color: rgb(33, 33, 33);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .primary {

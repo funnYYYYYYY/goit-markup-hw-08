@@ -106,14 +106,25 @@
   position: fixed;
   top: 0;
   background-color: $background-color;
-  width: 100vh;
+  width: 100%;
   height: 100vh;
+
+  padding-left: 40px;
+  padding-bottom: 48px;
 }
 
 .menu-closed {
+  margin-top: 10px;
   background-color: transparent;
   border: 0;
   display: block;
+  margin-left: auto;
+}
+
+.menu-top__link {
+  @extend %link;
+  @include font(32px, 500, 1.17, 0.02em);
+  color: $second-text-color;
 }
 
 .menu-top__list {
@@ -123,12 +134,20 @@
   }
 }
 
-.menu-top__list:not(:list-child) {
+.menu-contact__item,
+.menu-social__item {
+  @extend %list;
+}
+
+.menu-contact__tel {
+  @include font(24px, 500, 1.18, 0.02em);
+  @extend %link;
+  color: $placeholder-color;
   margin-bottom: 32px;
 }
 
-.menu-top__link {
+.menu-contact__mail {
   @extend %link;
-  @include font(40px, 500, 1.17, 0.02em);
-  color: $second-text-color;
+  @include font(16px, 500, 1.16, 0.02em);
+  color: $placeholder-color;
 }
