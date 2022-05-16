@@ -1,0 +1,19 @@
+.backdrop {
+  position: fixed;
+  @include size(100%, 100%);
+  top: 0;
+  background-color: $backgrop-bcg-color;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.close-link {
+  display: block;
+  @include size(30px, 30px);
+}
