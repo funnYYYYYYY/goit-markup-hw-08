@@ -12,11 +12,11 @@
   overflow: hidden;
 }
 
-.informations-list, .join, .product-development, .filtr-menu, .companies-logo, .worker, .social-media, .product-device, .benefits__list, .nav-list {
+.informations-list, .join, .product-development, .filtr-menu, .companies-logo, .worker, .social-media, .product-device, .benefits__list, .menu-top__list, .nav-list {
   list-style: none;
 }
 
-.informations-list__mail, .informations-list__number, .informations-list__address, .focus, .object, .social-media__link, .nav-list__link, .logo__link {
+.informations-list__mail, .informations-list__number, .informations-list__address, .focus, .object, .social-media__link, .menu-top__link, .nav-list__link, .logo__link {
   text-decoration: none;
 }
 
@@ -207,9 +207,7 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -265,10 +263,12 @@ img {
 }
 
 .menu {
+  display: none;
   margin-left: 93px;
 }
 
 .nav-list {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,7 +280,6 @@ img {
 }
 
 .logo {
-  position: relative;
   color: rgb(33, 150, 243);
 }
 
@@ -289,20 +288,21 @@ img {
 }
 
 .logo__link {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: block;
   height: 100%;
   color: rgb(33, 33, 33);
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 
 .nav-list__item {
+  display: none;
   position: relative;
 }
 .nav-list__item:not(:last-child) {
@@ -310,6 +310,7 @@ img {
 }
 
 .nav-list__link {
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -355,6 +356,45 @@ img {
 
 .current {
   color: rgb(33, 150, 243);
+}
+
+.open-menu {
+  margin-top: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100vh;
+  height: 100vh;
+}
+
+.menu-closed {
+  background-color: transparent;
+  border: 0;
+  display: block;
+}
+
+.menu-top__list:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-top__list:not(:list-child) {
+  margin-bottom: 32px;
+}
+
+.menu-top__link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: rgb(33, 33, 33);
 }
 
 .primary {

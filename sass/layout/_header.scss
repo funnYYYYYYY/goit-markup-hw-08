@@ -1,8 +1,10 @@
 .menu {
+  display: none;
   margin-left: 93px;
 }
 
 .nav-list {
+  display: none;
   display: flex;
   margin-left: auto;
   @extend %list;
@@ -13,7 +15,7 @@
 }
 
 .logo {
-  position: relative;
+  // position: relative;
   color: $accent-text-color;
 }
 
@@ -22,19 +24,20 @@
 }
 
 .logo__link {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: block;
   height: 100%;
   color: $second-text-color;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  @include font(26px, 700, 1.19, 0.03em);
+  @include font(24px, 700, 1.16, 0.03em);
 
   @extend %link;
 }
 
 .nav-list__item {
+  display: none;
   position: relative;
 
   &:not(:last-child) {
@@ -43,6 +46,7 @@
 }
 
 .nav-list__link {
+  display: none;
   align-items: center;
   display: flex;
   padding-top: 32px;
@@ -87,4 +91,44 @@
 
 .current {
   color: $accent-text-color;
+}
+
+.open-menu {
+  margin-top: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: $background-color;
+  width: 100vh;
+  height: 100vh;
+}
+
+.menu-closed {
+  background-color: transparent;
+  border: 0;
+  display: block;
+}
+
+.menu-top__list {
+  @extend %list;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-top__list:not(:list-child) {
+  margin-bottom: 32px;
+}
+
+.menu-top__link {
+  @extend %link;
+  @include font(40px, 500, 1.17, 0.02em);
+  color: $second-text-color;
 }
