@@ -121,14 +121,33 @@
   margin-left: auto;
 }
 
+.menu-closed:hover .menu-closed_sign,
+.menu-closed:focus .menu-closed_sign {
+  fill: $accent-text-color;
+}
+
+.open-menu:hover .open-menu__sign,
+.open-menu:focus .open-menu__sign {
+  fill: $accent-text-color;
+}
+
 .menu-top__link {
   @extend %link;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+  display: block;
   @include font(32px, 500, 1.17, 0.02em);
   color: $second-text-color;
 }
 
 .menu-top__list {
   @extend %list;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
   &:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -139,15 +158,52 @@
   @extend %list;
 }
 
+.menu-contact__item {
+  &:first-child {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-contact__item {
+  &:last-child {
+    margin-bottom: 44px;
+  }
+}
+
+.menu-contact__tel,
+.menu-contact__mail {
+  @extend %link;
+  display: block;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+  color: $placeholder-color;
+}
+
 .menu-contact__tel {
   @include font(24px, 500, 1.18, 0.02em);
-  @extend %link;
-  color: $placeholder-color;
-  margin-bottom: 32px;
 }
 
 .menu-contact__mail {
-  @extend %link;
   @include font(16px, 500, 1.16, 0.02em);
-  color: $placeholder-color;
+}
+
+.menu-social {
+  display: flex;
+}
+
+.menu-social__link {
+  @include font(12px, 500, 1.22, 0.01em);
+  color: $accent-text-color;
+}
+
+.menu-social__item {
+  &:not(:last-child) {
+    border-right: 1px solid $decorate-mobile-menu;
+    padding-right: 10px;
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
 }

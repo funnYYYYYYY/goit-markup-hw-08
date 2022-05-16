@@ -17,7 +17,8 @@
   list-style: none;
 }
 
-.informations-list__mail, .informations-list__number, .informations-list__address, .focus, .object, .social-media__link, .menu-contact__mail, .menu-contact__tel, .menu-top__link, .nav-list__link, .logo__link {
+.informations-list__mail, .informations-list__number, .informations-list__address, .focus, .object, .social-media__link, .menu-contact__tel,
+.menu-contact__mail, .menu-top__link, .nav-list__link, .logo__link {
   text-decoration: none;
 }
 
@@ -212,6 +213,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.mob-menu__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -391,16 +399,52 @@ img {
   margin-left: auto;
 }
 
+.menu-closed:hover .menu-closed_sign,
+.menu-closed:focus .menu-closed_sign {
+  fill: rgb(33, 150, 243);
+}
+
+.open-menu:hover .open-menu__sign,
+.open-menu:focus .open-menu__sign {
+  fill: rgb(33, 150, 243);
+}
+
 .menu-top__link {
+  display: block;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: rgb(33, 33, 33);
 }
+.menu-top__link:hover, .menu-top__link:focus {
+  color: rgb(33, 150, 243);
+}
 
+.menu-top__list:hover, .menu-top__list:focus {
+  color: rgb(33, 150, 243);
+}
 .menu-top__list:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.menu-contact__item:first-child {
+  margin-bottom: 32px;
+}
+
+.menu-contact__item:last-child {
+  margin-bottom: 44px;
+}
+
+.menu-contact__tel,
+.menu-contact__mail {
+  display: block;
+  color: rgba(117, 117, 117, 0.5);
+}
+.menu-contact__tel:hover, .menu-contact__tel:focus,
+.menu-contact__mail:hover,
+.menu-contact__mail:focus {
+  color: rgb(33, 150, 243);
 }
 
 .menu-contact__tel {
@@ -408,8 +452,6 @@ img {
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: rgba(117, 117, 117, 0.5);
-  margin-bottom: 32px;
 }
 
 .menu-contact__mail {
@@ -417,7 +459,28 @@ img {
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: rgba(117, 117, 117, 0.5);
+}
+
+.menu-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-social__link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.01em;
+  color: rgb(33, 150, 243);
+}
+
+.menu-social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.menu-social__item:not(:first-child) {
+  padding-left: 10px;
 }
 
 .primary {

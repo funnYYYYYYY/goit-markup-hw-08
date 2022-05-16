@@ -4,6 +4,16 @@
   // padding-right: 15px;
   display: flex;
 
+  // &--display {
+  //   display: flex;
+  //   align-items: center;
+  // }
+}
+
+.mob-menu__container {
+  width: 100%;
+  display: flex;
+
   flex-direction: column;
 
   justify-content: space-between;
@@ -12,9 +22,4 @@
   max-width: 480px;
   margin-right: auto;
   margin-left: auto;
-
-  // &--display {
-  //   display: flex;
-  //   align-items: center;
-  // }
 }
