@@ -1,13 +1,15 @@
 .container {
   width: 100%;
-  // padding-left: 15px;
-  // padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
 
-  // &--display {
-  //   display: flex;
-  //   align-items: center;
-  // }
+  @include tablet {
+    &--display {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 .mob-menu__container {

@@ -1,13 +1,36 @@
 .menu {
   display: none;
   margin-left: 93px;
+  @include tablet {
+    display: flex;
+    margin-left: 88px;
+  }
 }
 
 .nav-list {
   display: none;
-  display: flex;
   margin-left: auto;
   @extend %list;
+  @include tablet {
+    display: flex;
+    margin-left: auto;
+  }
+  @include desktop {
+    display: flex;
+  }
+}
+
+.nav-list--change {
+  @include tablet {
+    flex-direction: column;
+    padding-left: 84px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .header {
@@ -43,16 +66,31 @@
   &:not(:last-child) {
     margin-right: 50px;
   }
+  @include tablet {
+    display: flex;
+  }
+}
+
+.nav-list__item--size {
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+.nav-list__item--bottom {
+  margin-bottom: 10px;
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .nav-list__link {
-  display: none;
   align-items: center;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: $second-text-color;
-  @include font(nul, 500, 1.14, null);
+  @include font(null, 500, 1.14, null);
 
   @extend %link;
 
@@ -80,6 +118,28 @@
   }
 }
 
+.nav-list__item--size {
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @include desktop {
+    font-size: 14px;
+  }
+}
+
+.nav-list__link--margin {
+  @include tablet {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .nav-list__link--color {
   color: $primary-text-color;
 }
@@ -95,11 +155,13 @@
 
 .open-menu {
   margin-top: 10px;
-  margin-top: 10px;
   background-color: transparent;
   border: none;
   display: block;
   margin-left: auto;
+  @include tablet {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -119,6 +181,7 @@
   border: 0;
   display: block;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .menu-closed:hover .menu-closed_sign,
@@ -140,6 +203,9 @@
   display: block;
   @include font(32px, 500, 1.17, 0.02em);
   color: $second-text-color;
+  @include mobile {
+    font-size: 40px;
+  }
 }
 
 .menu-top__list {
@@ -183,10 +249,18 @@
 
 .menu-contact__tel {
   @include font(24px, 500, 1.18, 0.02em);
+  @include mobile {
+    width: 480px;
+    font-size: 34px;
+  }
 }
 
 .menu-contact__mail {
   @include font(16px, 500, 1.16, 0.02em);
+  @include mobile {
+    width: 480px;
+    font-size: 24px;
+  }
 }
 
 .menu-social {
@@ -196,6 +270,10 @@
 .menu-social__link {
   @include font(12px, 500, 1.22, 0.01em);
   color: $accent-text-color;
+  @include mobile {
+    width: 480px;
+    font-size: 18px;
+  }
 }
 
 .menu-social__item {

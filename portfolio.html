@@ -25,25 +25,33 @@
     <header class="header">
       <div class="container container--display">
         <div class="logo">
-          <a class="logo__link link" href="">
+          <a class="logo__link" href="">
             <span class="logo__text">Web</span>Studio</a
           >
         </div>
         <nav class="menu">
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__link" href="./index.html">Студия</a>
+              <a class="nav-list__link nav-list__link--margin" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link current" href="">Портфолио</a>
+              <a
+                class="nav-list__link nav-list__link--margin  current"
+                href=""
+                >Портфолио</a
+              >
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="">Контакты</a>
+              <a class="nav-list__link nav-list__link--margin" href=""
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
-        <ul class="nav-list">
-          <li class="nav-list__item">
+        <ul class="nav-list nav-list--change">
+          <li class="nav-list__item nav-list__item--bottom">
             <a
               class="nav-list__link nav-list__link--color"
               href="mailto:info@devstudio.com"
@@ -65,6 +73,63 @@
             >
           </li>
         </ul>
+        <button class="open-menu" type="button">
+          <svg class="open-menu__icon" width="40px" height="40px">
+            <use
+              class="open-menu__sign"
+              href="./images/icons.svg#menu_40px"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu__container">
+          <div class="menu-top">
+            <button class="menu-closed" type="button">
+              <svg class="menu-closed__icon" width="40px" height="40px">
+                <use
+                  class="menu-closed_sign"
+                  href="./images/icons.svg#close_40px"
+                ></use>
+              </svg>
+            </button>
+            <ul class="menu-top__list">
+              <li class="menu-top__list">
+                <a href="" class="menu-top__link">Студия</a>
+              </li>
+              <li class="menu-top__list">
+                <a href="" class="menu-top__link">Портфолио</a>
+              </li>
+              <li class="menu-top__list">
+                <a href="" class="menu-top__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-bottom">
+            <ul class="menu-contact">
+              <li class="menu-contact__item">
+                <a href="" class="menu-contact__tel">+38 096 111 11 11</a>
+              </li>
+              <li class="menu-contact__item">
+                <a href="" class="menu-contact__mail">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="menu-social">
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link">Instagram</a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link">Twitter</a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link">Facebook</a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Main -->
