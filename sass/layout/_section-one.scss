@@ -1,35 +1,86 @@
 .primary {
   max-width: 1600px;
-  margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 198px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: $second-background-color;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bcg-fon.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url(../images/background/bcg-mob.jpg);
+
   @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
       ),
-      url(../);
+      url("../images/background/bcg-mob-2x.jpg");
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/bcg-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/background/bcg-tablet-2x.jpg");
+    }
+
+    @include desktop {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background/bcg-desktop.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url("../images/background/bcg-desktop-2x.jpg");
+      }
+    }
   }
 }
 
 .primary__title {
-  text-align: center;
-  max-width: 696px;
+  @include font(20px, 900, 2.1, 0.06em);
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   color: $other-text-color;
-  @include font(44px, 900, 1.36, 0.06em);
-  text-transform: uppercase;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  max-width: 100%;
+
+  @include tablet {
+    @include font(26px, null, 1.61, 0.06em);
+  }
+
+  @include desktop {
+    @include font(44px, null, 1.36, null);
+  }
 }

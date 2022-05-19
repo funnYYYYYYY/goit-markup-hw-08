@@ -57,6 +57,11 @@
   @include font(24px, 700, 1.16, 0.03em);
 
   @extend %link;
+
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .nav-list__item {
