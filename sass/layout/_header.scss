@@ -173,6 +173,9 @@
 
   padding-left: 40px;
   padding-bottom: 48px;
+  @include tablet {
+    display: none;
+  }
 }
 
 .menu-closed {
