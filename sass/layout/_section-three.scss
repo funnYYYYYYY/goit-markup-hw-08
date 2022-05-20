@@ -5,6 +5,10 @@
     display: flex;
     @extend %list;
   }
+
+  @media screen and (max-width: 1199.97px) {
+    display: none;
+  }
 }
 
 .device {

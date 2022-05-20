@@ -4,4 +4,7 @@
   color: $second-text-color;
   @include font(28px, null, 1.18, $letter-spacing);
   text-align: center;
+  @include desktop {
+    @include font(36px, null, 1.16, $letter-spacing);
+  }
 }
