@@ -52,7 +52,9 @@
           </ul>
         </nav>
         <ul class="nav-list nav-list--change">
-          <li class="nav-list__item nav-list__item--bottom">
+          <li
+            class="nav-list__item nav-list__item--margin nav-list__item--bottom"
+          >
             <a
               class="nav-list__link nav-list__link--color nav-list__link--size"
               href="mailto:info@devstudio.com"
@@ -247,17 +249,26 @@
         </div>
       </section> -->
       <!-- Sectiom 4 -->
-      <!-- <section class="section about">
+      <section class="section about">
         <div class="container">
           <h2 class="about__team">Наша команда</h2>
           <ul class="worker">
             <li class="worker__people">
-              <img
-                src="./images/igor-1.jpg"
-                alt="Учасник команды"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width:1200px )"
+                srcset="./images/ourteam/people1-desktop-min.jpg 1x,
+                ./images/ourteam/people1-desktop-2x-min.jpg 2x"" /> <source
+                media="(min-width:768px )"
+                srcset="./images/ourteam/people1-tablet-min.jpg 1x,
+                ./images/ourteam/people1-tablet-2x-min.jpg 2x"" /> <source
+                media="(min-width:468px )"
+                srcset="./images/ourteam/people1-mob-min.jpg 1x,
+                ./images/ourteam/people1-mob-2x-min.jpg 2x"" />
+                <img
+                  src="./images/ourteam/people1-mob-min.jpg"
+                  alt="Фотография Николая Тарасова"
+                />
+              </picture>
               <div
                 class="worker__container-position worker__container--position"
               >
@@ -317,12 +328,21 @@
               </div>
             </li>
             <li class="worker__people">
-              <img
-                src="images/olga-1.jpg"
-                alt="Учасник команды"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width:1200px )"
+                srcset="./images/ourteam/people2-desktop-min.jpg 1x,
+                ./images/ourteam/people2-desktop-2x-min.jpg 2x"" /> <source
+                media="(min-width:768px )"
+                srcset="./images/ourteam/people2-tablet-min.jpg 1x,
+                ./images/ourteam/people2-tablet-2x-min.jpg 2x"" /> <source
+                media="(min-width:468px )"
+                srcset="./images/ourteam/people2-mob-min.jpg 1x,
+                ./images/ourteam/people2-mob-2x-min.jpg 2x"" />
+                <img
+                  src="./images/ourteam/people2-mob-min.jpg"
+                  alt="Фотография Ольги Репиной"
+                />
+              </picture>
               <div class="worker__container-position">
                 <h3 class="worker__name">Ольга Репина</h3>
                 <p class="worker__position" lang="en">Frontend Developer</p>
@@ -380,12 +400,21 @@
               </div>
             </li>
             <li class="worker__people">
-              <img
-                src="./images/nikolay-1.jpg"
-                alt="Учасник команды"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width:1200px )"
+                srcset="./images/ourteam/people3-desktop-min.jpg 1x,
+                ./images/ourteam/people3-desktop-2x-min.jpg 2x"" /> <source
+                media="(min-width:768px )"
+                srcset="./images/ourteam/people3-tablet-min.jpg 1x,
+                ./images/ourteam/people3-tablet-2x-min.jpg 2x"" /> <source
+                media="(min-width:468px )"
+                srcset="./images/ourteam/people3-mob-min.jpg 1x,
+                ./images/ourteam/people3-mob-2x-min.jpg 2x"" />
+                <img
+                  src="./images/ourteam/people3-mob-min.jpg"
+                  alt="Фотография Николая Тарасова"
+                />
+              </picture>
               <div class="worker__container-position">
                 <h3 class="worker__name">Николай Тарасов</h3>
                 <p class="worker__position" lang="en">Marketing</p>
@@ -443,12 +472,21 @@
               </div>
             </li>
             <li class="worker__people">
-              <img
-                src="./images/mihail-1.jpg"
-                alt="Учасник команды"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width:1200px )"
+                srcset="./images/ourteam/people4-desktop-min.jpg 1x,
+                ./images/ourteam/people4-desktop-2x-min.jpg 2x"" /> <source
+                media="(min-width:768px )"
+                srcset="./images/ourteam/people4-tablet-min.jpg 1x,
+                ./images/ourteam/people4-tablet-2x-min.jpg 2x"" /> <source
+                media="(min-width:468px )"
+                srcset="./images/ourteam/people4-mob-min.jpg 1x,
+                ./images/ourteam/people4-mob-2x-min.jpg 2x"" />
+                <img
+                  src="./images/ourteam/people4-mob-min.jpg"
+                  alt="Фотография Михаила Ермакова"
+                />
+              </picture>
               <div class="worker__container-position">
                 <h3 class="worker__name">Михаил Ермаков</h3>
                 <p class="worker__position" lang="en">UI Designer</p>
@@ -507,7 +545,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Section 5 -->
       <!-- <section class="section clients">
         <div class="container">
