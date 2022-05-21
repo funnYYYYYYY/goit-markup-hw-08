@@ -815,11 +815,15 @@ img {
   padding-top: 30px;
   margin-bottom: 10px;
   color: rgb(33, 33, 33);
-  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767.98px) {
+  .benefits-card__company {
+    text-align: center;
+  }
 }
 .benefits-card__description {
   max-width: 100%;
