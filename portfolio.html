@@ -23,7 +23,7 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container container--display">
+      <div class="container">
         <div class="logo">
           <a class="logo__link" href="">
             <span class="logo__text">Web</span>Studio</a
@@ -31,19 +31,19 @@
         </div>
         <nav class="menu">
           <ul class="nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link nav-list__link--margin" href="./index.html"
+            <li class="nav-list__item nav-list__item--margin">
+              <a
+                class="nav-list__link nav-list__link--margin"
+                href="./index.html"
                 >Студия</a
               >
             </li>
-            <li class="nav-list__item">
-              <a
-                class="nav-list__link nav-list__link--margin  current"
-                href=""
+            <li class="nav-list__item nav-list__item--margin">
+              <a class="nav-list__link nav-list__link--margin current" href=""
                 >Портфолио</a
               >
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list__item nav-list__item--margin">
               <a class="nav-list__link nav-list__link--margin" href=""
                 >Контакты</a
               >
@@ -53,7 +53,7 @@
         <ul class="nav-list nav-list--change">
           <li class="nav-list__item nav-list__item--bottom">
             <a
-              class="nav-list__link nav-list__link--color"
+              class="nav-list__link nav-list__link--color nav-list__link--size"
               href="mailto:info@devstudio.com"
             >
               <svg class="nav-list__icon" width="16px" height="12px">
@@ -64,7 +64,7 @@
           </li>
           <li class="nav-list__item">
             <a
-              class="nav-list__link nav-list__link--color"
+              class="nav-list__link nav-list__link--color nav-list__link-size"
               href="tel:+380961111111"
             >
               <svg class="nav-list__icon" width="10px" height="16px">
@@ -135,7 +135,7 @@
     <!-- Main -->
     <main>
       <!-- Button -->
-      <!-- <section class="section main-nav">
+      <section class="section main-nav">
         <div class="container">
           <h1 class="visually-hidden">Что мы делаем</h1>
           <ul class="filtr-menu">
@@ -159,12 +159,34 @@
             <li class="main-informations">
               <a href="" class="object">
                 <div class="object__thumb">
-                  <img
-                    src="./images/noytbyk-1.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img1-desktop-min.jpg    1x,
+                        ./images/portfolio/img1-desktop-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/img1-tablet-min.jpg    1x,
+                        ./images/portfolio/img1-tablet-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/img1-mob-min.jpg    1x,
+                        ./images/portfolio/img1-mob-2x-min.jpg 1x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img1-mob-min.jpg"
+                      alt="Ноутбук"
+                    />
+                  </picture>
+
                   <div class="object__text">
                     <p class="object__word">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -183,12 +205,33 @@
             <li class="main-informations">
               <a href="" class="object">
                 <div class="object__thumb">
-                  <img
-                    src="./images/basketbol-1.jpg"
-                    alt="Баскетбол"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img2-desktop-min.jpg    1x,
+                        ./images/portfolio/img2-desktop-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/img2-tablet-min.jpg    1x,
+                        ./images/portfolio/img2-tablet-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/img2-mob-min.jpg    1x,
+                        ./images/portfolio/img2-mob-2x-min.jpg 1x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img2-mob-min.jpg"
+                      alt="<Баскетбол>"
+                    />
+                  </picture>
                   <div class="object__text">
                     <p class="object__word">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -209,13 +252,34 @@
             <li class="main-informations">
               <a href="" class="object">
                 <div class="object__thumb">
-                  <img
-                    class="foto"
-                    src="./images/emblema-1.jpg"
-                    alt="Емблема"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img3-desktop-min.jpg    1x,
+                        ./images/portfolio/img3-desktop-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/img3-tablet-min.jpg    1x,
+                        ./images/portfolio/img3-tablet-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/img3-mob-min.jpg    1x,
+                        ./images/portfolio/img3-mob-2x-min.jpg 1x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img3-mob-min.jpg"
+                      alt="Емблема"
+                    />
+                  </picture>
+
                   <div class="object__text">
                     <p class="object__word">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -236,12 +300,34 @@
             <li class="main-informations">
               <a href="" class="object">
                 <div class="object__thumb">
-                  <img
-                    src="./images/nayshniki-1.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img4-desktop-min.jpg    1x,
+                        ./images/portfolio/img4-desktop-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/img4-tablet-min.jpg    1x,
+                        ./images/portfolio/img4-tablet-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/img4-mob-min.jpg    1x,
+                        ./images/portfolio/img4-mob-2x-min.jpg 1x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img4-mob-min.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
+
                   <div class="object__text">
                     <p class="object__word">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -262,12 +348,34 @@
             <li class="main-informations">
               <a href="" class="object">
                 <div class="object__thumb">
-                  <img
-                    src="./images/korobki-1.jpg"
-                    alt="Коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img5-desktop-min.jpg    1x,
+                        ./images/portfolio/img5-desktop-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/img5-tablet-min.jpg    1x,
+                        ./images/portfolio/img5-tablet-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/img5-mob-min.jpg    1x,
+                        ./images/portfolio/img5-mob-2x-min.jpg 1x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img5-mob-min.jpg"
+                      alt="Коробки"
+                    />
+                  </picture>
+
                   <div class="object__text">
                     <p class="object__word">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -288,13 +396,33 @@
             <li class="main-informations">
               <a href="" class="object">
                 <div class="object__thumb">
-                  <img
-                    class=""
-                    src="./images/monitor-1.jpg"
-                    alt="Монитор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img6-desktop-min.jpg    1x,
+                        ./images/portfolio/img6-desktop-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/img6-tablet-min.jpg    1x,
+                        ./images/portfolio/img6-tablet-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/img6-mob-min.jpg    1x,
+                        ./images/portfolio/img6-mob-2x-min.jpg 1x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img6-mob-min.jpg"
+                      alt="Монитор"
+                    />
+                  </picture>
                   <div class="object__text">
                     <p class="object__word">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -315,12 +443,33 @@
             <li class="main-informations">
               <a href="" class="object">
                 <div class="object__thumb">
-                  <img
-                    src="./images/knuzka-1.jpg"
-                    alt="Книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img7-desktop-min.jpg    1x,
+                        ./images/portfolio/img7-desktop-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/img7-tablet-min.jpg    1x,
+                        ./images/portfolio/img7-tablet-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/img7-mob-min.jpg    1x,
+                        ./images/portfolio/img7-mob-2x-min.jpg 1x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img7-mob-min.jpg"
+                      alt="Книга"
+                    />
+                  </picture>
                   <div class="object__text">
                     <p class="object__word">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -341,12 +490,33 @@
             <li class="main-informations">
               <a href="" class="object">
                 <div class="object__thumb">
-                  <img
-                    src="./images/etiketka-1.jpg"
-                    alt="Бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img8-desktop-min.jpg    1x,
+                        ./images/portfolio/img8-desktop-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/img8-tablet-min.jpg    1x,
+                        ./images/portfolio/img8-tablet-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/img8-mob-min.jpg    1x,
+                        ./images/portfolio/img8-mob-2x-min.jpg 1x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img8-mob-min.jpg"
+                      alt="Бирка"
+                    />
+                  </picture>
                   <div class="object__text">
                     <p class="object__word">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -367,12 +537,34 @@
             <li class="main-informations">
               <a href="" class="object">
                 <div class="object__thumb">
-                  <img
-                    src="./images/robota-1.jpg"
-                    alt="Рабочее место"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img9-desktop-min.jpg    1x,
+                        ./images/portfolio/img9-desktop-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/img9-tablet-min.jpg    1x,
+                        ./images/portfolio/img9-tablet-2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/img9-mob-min.jpg    1x,
+                        ./images/portfolio/img9-mob-2x-min.jpg 1x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img9-mob-min.jpg"
+                      alt="Рабочее место"
+                    />
+                  </picture>
+
                   <div class="object__text">
                     <p class="object__word">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -391,9 +583,10 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
+
     <!-- Footer -->
-    <!-- <footer class="information">
+    <footer class="information">
       <div class="container">
         <div class="container-adress">
           <a class="footer__logo"><span class="logo">Web</span>Studio</a>
@@ -477,7 +670,7 @@
             </li>
           </ul>
         </div>
-        <div class="container-footer">
+        <div class="container-mailing">
           <p class="mailinglist__title">Подпишитесь на рассылку</p>
           <form class="footer-form">
             <div class="mailinglist">
@@ -498,6 +691,6 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
