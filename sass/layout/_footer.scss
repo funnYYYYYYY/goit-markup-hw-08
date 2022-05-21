@@ -11,6 +11,7 @@
     @include tablet {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-around;
     }
 
     align-items: baseline;
@@ -134,6 +135,11 @@
     display: block;
   }
 
+  @media screen and (min-width: 768) and (max-width: 1199.98px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &__icon {
     margin-left: 10px;
   }
@@ -149,10 +155,4 @@
 
 .informations-list {
   @extend %list;
-}
-
-.footer-form {
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    margin-top: 60px;
-  }
 }
