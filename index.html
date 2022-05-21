@@ -730,76 +730,75 @@
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-modal-close class="modal-button" type="button">
-          <svg class="modal-icon" width="18px" height="18px">
-            <use
-              class="modal-icon-svg"
-              href="./images/icons.svg#close-black-18dp-2-1"
-            ></use>
+        <button data-modal-close class="modal__button" type="button">
+          <svg class="modal__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#close-black-18dp-2-1"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <label class="modal-label" for="text-modal">Имя</label>
+          <label class="modal-form__label" for="text-modal">Имя</label>
           <div class="input-wrap">
             <input
-              class="modal-btn"
+              class="input-wrap__btn"
               name="person"
               type="text"
               placeholder=""
               id="text-modal"
             />
-            <svg class="modal-img" width="18px" height="18px">
+            <svg class="input-wrap__img" width="18px" height="18px">
               <use href="./images/icons.svg#people"></use>
             </svg>
           </div>
 
-          <label class="modal-label" for="modal-tel">Телефон</label>
+          <label class="modal-form__label" for="modal-tel">Телефон</label>
           <div class="input-wrap">
             <input
-              class="modal-btn"
+              class="input-wrap__btn"
               name="telephone"
               type="tel"
               placeholder=""
               id="modal-tel"
             />
-            <svg class="modal-img" width="18px" height="18px">
+            <svg class="input-wrap__img" width="18px" height="18px">
               <use href="./images/icons.svg#telephone"></use>
             </svg>
           </div>
 
-          <label class="modal-label" for="modal-mail">Почта</label>
+          <label class="modal-form__label" for="modal-mail">Почта</label>
           <div class="input-wrap">
             <input
-              class="modal-btn"
+              class="input-wrap__btn"
               name="mail"
               type="email"
               placeholder=""
               id="modal-mail"
             />
-            <svg class="modal-img" width="18px" height="18px">
+            <svg class="input-wrap__img" width="18px" height="18px">
               <use href="./images/icons.svg#mail"></use>
             </svg>
           </div>
 
-          <label class="modal-label" for="modal-coment">Комментарий</label>
+          <label class="modal-form__label" for="modal-coment"
+            >Комментарий</label
+          >
           <textarea
-            class="modal-textarea"
+            class="comments"
             name="coment"
             placeholder="Введите текст"
             id="modal-coment"
           ></textarea>
           <input
             type="checkbox"
-            class="modal-checkbox visually-hidden"
+            class="agree visually-hidden"
             name="modal-flag"
             id="modal-flag"
           />
-          <label class="modal-label-text" for="modal-flag"
+          <label class="agree__text" for="modal-flag"
             >Соглашаюсь с рассылкой и принимаю
-            <a class="link-license" href="#">Условия договора</a>
-            <span class="modal-span">
-              <svg class="modal-img-svg" width="16px" height="15px">
+            <a class="agree__link" href="#">Условия договора</a>
+            <span class="agree__img">
+              <svg class="agree__icon" width="16px" height="15px">
                 <use href="./images/icons.svg#Vector"></use>
               </svg>
             </span>
