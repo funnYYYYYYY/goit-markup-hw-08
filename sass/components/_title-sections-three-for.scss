@@ -7,4 +7,7 @@
   @include desktop {
     @include font(36px, null, 1.16, $letter-spacing);
   }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
