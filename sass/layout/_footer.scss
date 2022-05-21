@@ -4,9 +4,21 @@
   padding-bottom: 60px;
 
   & .container {
-    display: flex;
+    @media screen and (max-width: 767.98px) {
+      display: block;
+    }
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     align-items: baseline;
   }
+}
+
+.container-adress {
+  text-align: center;
 }
 
 .footer__logo {
@@ -77,6 +89,7 @@
 .join {
   display: flex;
   margin-top: 20px;
+  justify-content: center;
 
   @extend %list;
 
@@ -117,7 +130,9 @@
 }
 
 .mailinglist {
-  display: flex;
+  @media screen and (max-width: 1199.98px) {
+    display: block;
+  }
 
   &__icon {
     margin-left: 10px;
@@ -134,4 +149,10 @@
 
 .informations-list {
   @extend %list;
+}
+
+.footer-form {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-top: 60px;
+  }
 }

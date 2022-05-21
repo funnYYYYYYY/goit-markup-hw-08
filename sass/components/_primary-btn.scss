@@ -1,5 +1,5 @@
 .primary__btn {
-  @include font(16px, $font-weight, 1.88, 0.06em);
+  @include font(16px, null, 1.88, 0.06em);
   display: block;
   margin: 0 auto;
   background-color: $accent-text-color;
@@ -17,6 +17,7 @@
   }
 
   &--correct {
+    margin-top: 10px;
     @include size(null, 50px);
     display: inline-flex;
     align-items: center;

@@ -5,6 +5,8 @@
 .companies-logo {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
 
   @extend %list;
 
@@ -15,10 +17,22 @@
 }
 
 .companies-logo__list {
-  display: flex;
+  @media screen and (max-width: 1199.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  @include desktop {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -26,11 +40,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include size(170px, 92px);
+  @include size(130px, 92px);
   border: 1px solid $color-svg;
   cursor: pointer;
   color: $color-svg;
   border-radius: 4px;
+
+  @include mobile {
+    @include size(210px, 92px);
+  }
+
+  @include tablet {
+    @include size(226px, 92px);
+  }
+
+  @include desktop {
+    @include size(170px, 92px);
+  }
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
