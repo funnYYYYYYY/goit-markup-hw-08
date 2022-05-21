@@ -431,9 +431,6 @@ img {
   display: none;
   position: relative;
 }
-.nav-list__item:not(:last-child) {
-  margin-right: 50px;
-}
 @media screen and (min-width: 768px) {
   .nav-list__item {
     display: -webkit-box;
@@ -441,10 +438,15 @@ img {
     display: flex;
   }
 }
+@media screen and (min-width: 1200px) {
+  .nav-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
 
 @media screen and (min-width: 768px) {
-  .nav-list__item--margin {
-    margin-right: 0;
+  .nav-list__item--margin:not(:last-child) {
+    margin-right: 50px;
   }
 }
 

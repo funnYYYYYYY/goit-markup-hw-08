@@ -68,17 +68,22 @@
   display: none;
   position: relative;
 
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
   @include tablet {
     display: flex;
+  }
+
+  @include desktop {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .nav-list__item--margin {
   @include tablet {
-    margin-right: 0;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
