@@ -8,6 +8,10 @@
       display: block;
     }
 
+    @include mobile {
+      flex-wrap: wrap;
+    }
+
     @include tablet {
       display: flex;
       flex-wrap: wrap;
