@@ -5,4 +5,18 @@
     padding-top: $padding-top;
     padding-bottom: $padding-bottom;
   }
+
+  @include mobile-mini {
+    width: 320px;
+  }
+
+  @include mobile {
+    width: 468px;
+  }
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
 }

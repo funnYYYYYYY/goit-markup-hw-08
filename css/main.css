@@ -301,6 +301,26 @@ img {
     padding-bottom: 94px;
   }
 }
+@media screen and (min-width: 320px) {
+  .section {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .section {
+    width: 468px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 1200px;
+  }
+}
 
 .product__our,
 .about__team {
