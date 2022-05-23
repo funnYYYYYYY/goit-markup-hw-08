@@ -24,6 +24,9 @@
 
 .container-adress {
   text-align: center;
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .footer__logo {
@@ -149,7 +152,7 @@
   }
 
   &__title {
-    @include font($font-size, $font-weight, $line-height, $letter-spacing);
+    @include font($font-size, 700, $line-height, $letter-spacing);
     align-items: center;
     margin-bottom: 20px;
     text-transform: uppercase;

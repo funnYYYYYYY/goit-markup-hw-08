@@ -17,7 +17,7 @@
   list-style: none;
 }
 
-.informations-list__mail, .informations-list__number, .informations-list__address, .focus, .object, .social-media__link, .menu-contact__tel,
+.informations-list__mail, .informations-list__number, .informations-list__address, .focus, .object, .social-media__link, .menu-social__link, .menu-contact__tel,
 .menu-contact__mail, .menu-top__link, .nav-list__link, .logo__link {
   text-decoration: none;
 }
@@ -132,6 +132,12 @@ img {
   margin-right: 12px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .mailinglist__btn {
+    width: 358px;
+    height: 50px;
+  }
 }
 .mailinglist__btn:focus {
   border-color: rgb(33, 150, 243);
@@ -771,10 +777,6 @@ img {
   fill: currentColor;
 }
 
-.current {
-  color: rgb(33, 150, 243);
-}
-
 .open-menu {
   margin-top: 10px;
   background-color: transparent;
@@ -794,6 +796,7 @@ img {
   background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100vh;
+  z-index: 5;
   padding-left: 40px;
   padding-bottom: 48px;
 }
@@ -854,6 +857,10 @@ img {
   margin-bottom: 44px;
 }
 
+.menu-contact__tel {
+  color: rgb(33, 150, 243);
+}
+
 .menu-contact__tel,
 .menu-contact__mail {
   display: block;
@@ -870,6 +877,7 @@ img {
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.02em;
+  color: rgb(33, 150, 243);
 }
 @media screen and (min-width: 480px) {
   .menu-contact__tel {
@@ -919,6 +927,10 @@ img {
   padding-left: 10px;
 }
 
+.menu-top__link--current {
+  color: rgb(33, 150, 243);
+}
+
 .primary {
   max-width: 1600px;
   margin-left: auto;
@@ -929,8 +941,14 @@ img {
   background-position: center;
   background-size: cover;
   background-color: rgb(47, 48, 58);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/bcg-mob.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bcg-mob.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/bcg-mob.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bcg-mob.jpg");
+}
+@media screen and (min-width: 1200px) {
+  .primary {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .primary {
@@ -940,8 +958,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .primary {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/bcg-tablet.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bcg-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/bcg-tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bcg-tablet.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -952,8 +970,8 @@ img {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .primary {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/bcg-desktop.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bcg-desktop.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/bcg-desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bcg-desktop.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -977,7 +995,7 @@ img {
   letter-spacing: 0.06em;
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .primary__title {
     font-size: 26px;
     line-height: 1.61;
@@ -1006,6 +1024,11 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .benefits__item {
     -ms-flex-preferred-size: calc(50% - 30px);
@@ -1356,7 +1379,7 @@ img {
   margin-bottom: 4px;
   color: rgb(33, 33, 33);
   font-size: 18px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
 }
@@ -1408,6 +1431,12 @@ img {
         flex-wrap: wrap;
     margin-left: -30px;
     margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .object-title--height {
+    height: 146px;
   }
 }
 
@@ -1484,6 +1513,11 @@ img {
   line-height: 1.55;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 467.98px) {
+  .object__word {
+    font-size: 12px;
+  }
+}
 
 .information {
   background-color: rgb(47, 48, 58);
@@ -1520,6 +1554,11 @@ img {
 
 .container-adress {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .container-adress {
+    text-align: start;
+  }
 }
 
 .footer__logo {
@@ -1649,7 +1688,7 @@ img {
 }
 .mailinglist__title {
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   -webkit-box-align: center;

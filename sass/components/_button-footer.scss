@@ -9,6 +9,10 @@
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
 
+  @include desktop {
+    @include size(358px, 50px);
+  }
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {

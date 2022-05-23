@@ -167,10 +167,6 @@
   fill: currentColor;
 }
 
-.current {
-  color: $accent-text-color;
-}
-
 .open-menu {
   margin-top: 10px;
   background-color: transparent;
@@ -188,6 +184,8 @@
   background-color: $background-color;
   width: 100%;
   height: 100vh;
+
+  z-index: 5;
 
   padding-left: 40px;
   padding-bottom: 48px;
@@ -257,6 +255,10 @@
   }
 }
 
+.menu-contact__tel {
+  color: $accent-text-color;
+}
+
 .menu-contact__tel,
 .menu-contact__mail {
   @extend %link;
@@ -274,6 +276,8 @@
     width: 480px;
     font-size: 34px;
   }
+
+  color: $accent-text-color;
 }
 
 .menu-contact__mail {
@@ -289,6 +293,7 @@
 }
 
 .menu-social__link {
+  @extend %link;
   @include font(12px, 500, 1.22, 0.01em);
   color: $accent-text-color;
   @include mobile {
@@ -305,4 +310,8 @@
   &:not(:first-child) {
     padding-left: 10px;
   }
+}
+
+.menu-top__link--current {
+  color: $accent-text-color;
 }
